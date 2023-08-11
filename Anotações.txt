@@ -1,0 +1,27 @@
+pip install Django==4.2.4
+python.exe -m pip install --upgrade pip
+pip install virtualenv
+
+#Criando VirtualEnv
+virtualenv venv
+
+#Ativandovenv Windows
+venv/Scripts/Activate
+
+#Habilitar Scripts no VisualCode
+Set-ExecutionPolicy Unrestricted
+
+#Dependencias
+pip freeze
+pip freeze > requirements.txt
+
+#Cria configuração do Projeto
+django-admin startproject setup .
+
+#Inicia Servidor
+python manage.py runserver
+
+#Alterar TimeZone
+
+#Segurança GIT
+pip install python-dotenv
