@@ -25,3 +25,23 @@ python manage.py runserver
 
 #Segurança GIT
 pip install python-dotenv
+
+### GITHUB
+#Iniciar repositório local
+git init
+git add .
+
+git config --global user.email "dimas001@gmail.com"
+git config --global user.name "Dimas Silva"
+
+git commit -m "projeto in Django"
+git remote add origin https://github.com/dimassilva/django_project.git
+git push origin master
+
+
+### APP
+#Criar APP
+python manage.py startapp galeria
+
+#Atualizar arquivos Staticos
+python manage.py collectstatic
